@@ -7,11 +7,60 @@
   <span class="spacer"></span>
   <img class="avatar" src="https://s3-ap-northeast-1.amazonaws.com/kurashicom-images/shop/2016-09-22/c79294ba1cf2f10ec43b429936e011e5.png" alt="avatar">
 </md-toolbar>
-<md-sidenav-container class="example-container">
-  <md-sidenav mode="side" opened="true" #sidenav class="example-sidenav">
-    sidenav
+<md-sidenav-container>
+  <md-sidenav mode="side" opened="true" #sidenav>
+    <nav>
+      <ul>
+        <li>
+          <a href="#">商品管理</a>
+          <ul>
+            <li>商品一覧</li>
+            <li>カテゴリ一覧</li>
+            <li>グループ一覧</li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">発注管理</a>
+          <ul>
+            <li>在庫一覧</li>
+            <li>在庫イベント</li>
+            <li>在庫更新</li>
+            <li>仕入先一覧</li>
+            <li>発注一覧</li>
+          </ul>
+        </li>
+        <li><a href="">受注管理</a></li>
+        <li><a href="">会員管理</a></li>
+        <li><a href="">画像管理</a></li>
+        <li>
+          <a href="#">メール管理</a>
+          <ul>
+            <li>テンプレート一覧</li>
+            <li>フッター一覧</li>
+            <li>再入荷メール一覧</li>
+            <li>メルマガアドレス帳</li>
+            <li>メルマガアドレス帳CSV</li>
+          </ul>
+        </li>
+        <li><a href="">CSV管理</a></li>
+        <li><a href="">分析</a></li>
+        <li>
+          <a href="#">システム設定</a>
+          <ul>
+            <li>トップページ一覧</li>
+            <li>フリーページ一覧</li>
+            <li>お知らせ設定</li>
+            <li>ロゴ設定</li>
+            <li>バナー設定</li>
+            <li>新着商品リンク設定</li>
+            <li>ビジネスカレンダー</li>
+            <li>ユーザー一覧</li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
   </md-sidenav>
-  <div class="example-sidenav-content">
+  <div class="content">
     content
   </div>
 </md-sidenav-container>
