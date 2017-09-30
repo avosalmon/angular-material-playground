@@ -1,12 +1,14 @@
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
+import { AngularMaterialModule } from './angular-material.module';
 
 import { AppComponent } from './app.component';
-import { AngularMaterialModule } from './angular-material.module';
+import { AppTableComponent } from './app-table/app-table.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AppTableComponent
   ],
   imports: [
     BrowserAnimationsModule,
