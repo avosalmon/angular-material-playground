@@ -1,3 +1,5 @@
+@import "../_variables.scss";
+
 .spacer {
   flex: 1 1 auto;
 }
@@ -5,6 +7,12 @@
 .avatar {
   height: 70%;
   border-radius: 50%;
+}
+
+md-sidenav {
+  min-width: 150px;
+  background: $sidebar-bg;
+  color: $white;
 }
 
 .content {
