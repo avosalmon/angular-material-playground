@@ -1,12 +1,14 @@
-<md-toolbar color="primary">My App</md-toolbar>
+<md-toolbar>
+  <img src="assets/logo.svg">
+</md-toolbar>
 <md-sidenav-container class="example-container">
-  <md-sidenav mode="side" #sidenav class="example-sidenav">
+  <md-sidenav mode="side" opened="true" #sidenav class="example-sidenav">
     Jolly good!
   </md-sidenav>
 
   <div class="example-sidenav-content">
-    <button type="button" (click)="sidenav.open()">
-      Open sidenav
+    <button type="button" md-raised-button (click)="sidenav.toggle()">
+      Toggle sidenav
     </button>
   </div>
 </md-sidenav-container>
