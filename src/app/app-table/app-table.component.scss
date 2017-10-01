@@ -1,11 +1,32 @@
+@import "../../_variables";
+
 .table-wrapper {
   overflow-x: scroll;
 }
 
 table {
   border-collapse: collapse;
+  font-size: 12px;
+}
+
+th, td {
+  padding: 20px 10px;
+  white-space: nowrap;
+  border-bottom: 1px solid $gray-light;
+  text-align: left;
 }
 
 th {
-  min-width: 100px;
+  color: $gray;
+  font-weight: normal;
+}
+
+td {
+  color: $black;
+}
+
+.last-row {
+  td {
+    border-bottom: none;
+  }
 }

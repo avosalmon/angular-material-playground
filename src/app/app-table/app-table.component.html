@@ -17,33 +17,32 @@
         <th>月間受注額</th>
         <th>累積構成比</th>
         <th>ランク</th>
-        <th>注残数</th>
+        <th>注残合計</th>
         <th>発注数</th>
         <th>発注額</th>
       </tr>
     </thead>
     <tbody>
-      <tr class="clickable-row">
-        <td nowrap="nowrap">232</td>
-        <td>yes スクエア サコッシュバッグ  / M size / black</td>
-        <td nowrap="nowrap">990-51773009-X</td>
-        <td nowrap="nowrap">0</td>
-        <td nowrap="nowrap">1</td>
-        <td nowrap="nowrap">30</td>
-        <td nowrap="nowrap">50</td>
-        <td nowrap="nowrap">0円</td>
-        <td nowrap="nowrap">0円</td>
-        <td nowrap="nowrap">0</td>
-        <td nowrap="nowrap">0</td>
-        <td nowrap="nowrap">0</td>
-        <td nowrap="nowrap">0円</td>
-        <td nowrap="nowrap">99.31</td>
-        <td>C</td>
-        <td nowrap="nowrap">
-          0
-        </td>
-        <td nowrap="nowrap">50</td>
-        <td nowrap="nowrap">0円</td>
+      <tr *ngFor="let item of list; let isLast=last"
+          [ngClass]="{'last-row': isLast}">
+        <td>{{ item.id }}</td>
+        <td>{{ item.product.product_name }}</td>
+        <td>{{ item.product.model_number }}</td>
+        <td>{{ item.product.public_stock }}</td>
+        <td>{{ item.product.min_lot }}</td>
+        <td>{{ item.product.min_stock }}</td>
+        <td>{{ item.product.order_unit | number }}</td>
+        <td>{{ item.price | number }}円</td>
+        <td>{{ item.cost | number }}円</td>
+        <td>{{ item.stock_mail_count | number }}</td>
+        <td>{{ item.monthly_order_count | number }}</td>
+        <td>{{ item.weekly_order_count | number }}</td>
+        <td>{{ item.monthly_order_amount | number }}円</td>
+        <td>{{ item.accumulated_sales_composition | number }}</td>
+        <td>{{ item.sales_rank }}</td>
+        <td>0</td>
+        <td>{{ item.purchase_order_count | number }}</td>
+        <td>{{ item.subtotal | number }}円</td>
       </tr>
     </tbody>
   </table>
